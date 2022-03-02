@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="lm4075e_pwm_control" type="main" name="LinearActuator" output="screen"/>
+
+</launch>

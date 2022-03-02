@@ -1,0 +1,21 @@
+<launch>
+<!--
+  <node pkg="rosserial_python" type="serial_node" name="encoder">
+    <param name="port" value="/dev/ttyACM0"/>
+    <param name="baud" value="115200"/>
+  </node>
+-->
+
+  <node pkg="lm4075e_pwm_control" type="one_actuator_test" name="test" output="screen"/>
+<!--
+    <param name="Pin_PWM" type="int" value="23"/>
+    <param name="Pin_DIR" type="int" value="30"/>
+-->
+
+    <param name="Pin_PWM" type="int" value="26"/>
+    <param name="Pin_DIR" type="int" value="31"/>
+
+    <param name="Kp" type="double" value="10"/>
+    <param name="Ki" type="double" value="0.001"/>
+    <param name="Kd" type="double" value="0.01"/>
+</launch>
